@@ -1,0 +1,118 @@
+:root{
+  --bg:#0b1220;
+  --card:#111a2e;
+  --text:#e9eefc;
+  --muted:#a9b4d0;
+  --border:rgba(255,255,255,.12);
+  --accent:#5b8cff;
+  --danger:#ff5b6e;
+  --ok:#36d399;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 20% 0%, #132049 0%, var(--bg) 55%);
+  color: var(--text);
+}
+
+#root{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+h1{
+  margin: 0 0 18px;
+  font-size: 42px;
+  letter-spacing: .3px;
+}
+
+.app-card{
+  background: rgba(17,26,46,.78);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.form-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.input{
+  flex:1;
+  min-width: 220px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  outline: none;
+}
+.input:focus{
+  border-color: rgba(91,140,255,.75);
+  box-shadow: 0 0 0 4px rgba(91,140,255,.18);
+}
+
+.btn{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor:pointer;
+  user-select: none;
+}
+.btn:hover{ background: rgba(255,255,255,.12); }
+
+.btn-primary{
+  background: rgba(91,140,255,.22);
+  border-color: rgba(91,140,255,.55);
+}
+.btn-primary:hover{ background: rgba(91,140,255,.30); }
+
+.btn-danger{
+  background: rgba(255,91,110,.18);
+  border-color: rgba(255,91,110,.55);
+}
+.btn-danger:hover{ background: rgba(255,91,110,.25); }
+
+.btn-ok{
+  background: rgba(54,211,153,.16);
+  border-color: rgba(54,211,153,.55);
+}
+.btn-ok:hover{ background: rgba(54,211,153,.22); }
+
+.todo-list{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.todo-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+.todo-row:hover{
+  border-color: var(--border);
+  background: rgba(255,255,255,.04);
+}
+
+.todo-title{
+  min-width: 240px;
+  cursor:pointer;
+  color: var(--text);
+}
+.todo-title.done{
+  color: var(--muted);
+  text-decoration: line-through;
+}
