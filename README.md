@@ -17,4 +17,9 @@ A modern React + Tailwind based task management app.
 - LocalStorage
 - useReducer + custom hook
 
+## Preview
+
+![Study Planner Screenshot](./public/screenshot.png)
+
 ## Live Demo
+https://study-planner-kaan.netlify.app/
